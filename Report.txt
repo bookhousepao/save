@@ -21,12 +21,12 @@
 (04)Version : 10.0.18363
 
 {05}-- cpu info --
-(01)Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+(01)Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz
 (02)GenuineIntel
 (03)type : 0
 (04)family.model.stepping : 6.14.9
-(05)number : 8
-(06)clock : 3600MHz (3599MHz)
+(05)number : 4
+(06)clock : 2712MHz (2711MHz)
 (07)cpuid : 1
 (08)mmx : 1
 (09)cmov : 1
@@ -40,23 +40,23 @@
 
 
 {09}-- display driver info --
-(01)Driver : nvldumd.dll [0.0.0.0]
-(02)Description : NVIDIA GeForce GTX 1060 6GB
-(03)Product : 27
-(04)Version : 21
-(05)SubVersion : 14
-(06)Build : 5671
-(07)VendorId : 000010de
-(08)DeviceId : 00001c03
-(09)SubSysId : 32811462
-(10)Revision : 000000a1
-(11)DeviceIdentifier : d7b71e3e:00005f43:000011cf:010e03b8
+(01)Driver : igdumdim32.dll [0.0.0.0]
+(02)Description : Intel(R) HD Graphics 620
+(03)Product : 26
+(04)Version : 20
+(05)SubVersion : 100
+(06)Build : 7639
+(07)VendorId : 00008086
+(08)DeviceId : 00005916
+(09)SubSysId : 00261414
+(10)Revision : 00000002
+(11)DeviceIdentifier : d7b78e66:00001a56:000011cf:011c2790
 (12)WHQLLevel : 00000000
 
 {09}-- now display info --
-(01)Width  : 1920
-(02)Height : 1080
-(03)Rate   : 60
+(01)Width  : 2736
+(02)Height : 1824
+(03)Rate   : 59
 (04)Format : X8R8G8B8
 
 {10}-- device caps info (Direct3D9) --
@@ -66,18 +66,18 @@
 [Caps2] : e0020000
   CANCALIBRATEGAMMA : 0
   FULLSCREENGAMMA : 1
-[Caps3] : 000003a0
+[Caps3] : 00000320
 [PresentationIntervals] : 8000000f
   unknown
 [CursorCaps] : 00000001
   COLOR : 1
   LOWRES : 0
-[DevCaps] : 001bbef0
-  CANBLTSYSTONONLOCAL : 1
+[DevCaps] : 0019ae50
+  CANBLTSYSTONONLOCAL : 0
   CANRENDERAFTERFLIP : 1
   DRAWPRIMTLVERTEX : 1
   EXECUTESYSTEMMEMORY : 1
-  EXECUTEVIDEOMEMORY : 1
+  EXECUTEVIDEOMEMORY : 0
   HWRASTERIZATION : 1
   HWTRANSFORMANDLIGHT : 1
   NPATCHES : 0
@@ -86,22 +86,22 @@
   RTPATCHES : 0
   RTPATCHHANDLEZERO : 0
   SEPARATETEXTUREMEMORIES : 0
-  TEXTURENONLOCALVIDMEM : 1
+  TEXTURENONLOCALVIDMEM : 0
   TEXTURESYSTEMMEMORY : 0
   TEXTUREVIDEOMEMORY : 1
   TLVERTEXSYSTEMMEMORY : 1
-  TLVERTEXVIDEOMEMORY : 1
-[PrimitiveMiscCaps] : 002fcef2
+  TLVERTEXVIDEOMEMORY : 0
+[PrimitiveMiscCaps] : 002fccf2
   BLENDOP : 1
   CLIPPLANESCALEDPOINTS : 0
-  CLIPTLVERTS : 1
+  CLIPTLVERTS : 0
   COLORWRITEENABLE : 1
   CULLCCW : 1
   CULLCW : 1
   CULLNONE : 1
   MASKZ : 1
   TSSARGTEMP : 1
-[RasterCaps] : 07732191
+[RasterCaps] : 0f736191
   ANISOTROPY : 1
   COLORPERSPECTIVE : 1
   DITHER : 1
@@ -137,9 +137,9 @@
   SRCALPHASAT : 1
   SRCCOLOR : 1
   ZERO : 1
-[DestBlendCaps] : 00003fff
-  BOTHINVSRCALPHA : 1
-  BOTHSRCALPHA : 1
+[DestBlendCaps] : 000027ff
+  BOTHINVSRCALPHA : 0
+  BOTHSRCALPHA : 0
   DESTALPHA : 1
   DESTCOLOR : 1
   INVDESTALPHA : 1
@@ -165,9 +165,9 @@
   COLORGOURAUDRGB : 1
   FOGGOURAUD : 1
   SPECULARGOURAUDRGB : 1
-[TextureCaps] : 0001ecc5
+[TextureCaps] : 0021ec45
   ALPHA : 1
-  ALPHAPALETTE : 1
+  ALPHAPALETTE : 0
   CUBEMAP : 1
   CUBEMAP_POW2 : 0
   MIPCUBEMAP : 1
@@ -181,8 +181,8 @@
   TEXREPEATNOTSCALEDBYSIZE : 1
   VOLUMEMAP : 1
   VOLUMEMAP_POW2 : 0
-[TextureFilterCaps] : 03030700
-  MAGFANISOTROPIC : 0
+[TextureFilterCaps] : 07030700
+  MAGFANISOTROPIC : 1
   MAGFLINEAR : 1
   MAGFPOINT : 1
   MINFANISOTROPIC : 1
@@ -190,20 +190,20 @@
   MINFPOINT : 1
   MIPFLINEAR : 1
   MIPFPOINT : 1
-[CubeTextureFilterCaps] : 03030300
-  MAGFANISOTROPIC : 0
+[CubeTextureFilterCaps] : 07030700
+  MAGFANISOTROPIC : 1
   MAGFLINEAR : 1
   MAGFPOINT : 1
-  MINFANISOTROPIC : 0
+  MINFANISOTROPIC : 1
   MINFLINEAR : 1
   MINFPOINT : 1
   MIPFLINEAR : 1
   MIPFPOINT : 1
-[VolumeTextureFilterCaps] : 03030300
-  MAGFANISOTROPIC : 0
+[VolumeTextureFilterCaps] : 07030700
+  MAGFANISOTROPIC : 1
   MAGFLINEAR : 1
   MAGFPOINT : 1
-  MINFANISOTROPIC : 0
+  MINFANISOTROPIC : 1
   MINFLINEAR : 1
   MINFPOINT : 1
   MIPFLINEAR : 1
@@ -228,10 +228,10 @@
   FOG : 1
   TEXTURE : 1
   ZTEST : 1
-[MaxTexture] : 16384 x 16384
+[MaxTexture] : 8192 x 8192
 [MaxVolumeExtent] : 2048
 [MaxTextureRepeat] : 8192
-[MaxTextureAspectRatio] : 16384
+[MaxTextureAspectRatio] : 8192
 [MaxAnisotropy] : 16
 [MaxVertexW] : f
 [GuardBand] : f, f, f, f
@@ -249,7 +249,7 @@
   DONOTSTRIPELEMENTS : 1
   PSIZE : 1
   TEXCOORDCOUNTMASK : 1
-[TextureOpCaps] : 03feffff
+[TextureOpCaps] : 03ffffff
   ADD : 1
   ADDSIGNED : 1
   ADDSIGNED2X : 1
@@ -272,25 +272,25 @@
   MODULATEINVALPHA_ADDCOLOR : 1
   MODULATEINVCOLOR_ADDALPHA : 1
   MULTIPLYADD : 1
-  PREMODULATE : 0
+  PREMODULATE : 1
   SELECTARG1 : 1
   SELECTARG2 : 1
   SUBTRACT : 1
 [ExtentsAdjust] : 8
 [MaxSimultaneousTextures] : 8
-[VertexProcessingCaps] : 0000013b
+[VertexProcessingCaps] : 0000017b
   DIRECTIONALLIGHTS : 1
   LOCALVIEWER : 1
   MATERIALSOURCE7 : 1
   POSITIONALLIGHTS : 1
   TEXGEN : 1
-  TWEENING : 0
+  TWEENING : 1
 [MaxActiveLights] : 8
-[MaxUserClipPlanes] : 8
+[MaxUserClipPlanes] : 6
 [MaxVertexBlendMatrices] : 4
 [MaxVertexBlendMatrixIndex] : 0
 [MaxPointSize] : f
-[MaxPrimitiveCount] : 16777215
+[MaxPrimitiveCount] : 8388607
 [MaxVertexIndex] : 16777215
 [MaxStreams] : 16
 [MaxStreamStride] : 255
@@ -299,53 +299,74 @@
 [PixelShaderVersion] : ffff0300
 
 {11}-- display mode --
-640 x 480 (60) [X8R8G8B8]
-640 x 480 (75) [X8R8G8B8]
+320 x 200 (59) [X8R8G8B8]
+320 x 200 (60) [X8R8G8B8]
+320 x 240 (59) [X8R8G8B8]
+320 x 240 (60) [X8R8G8B8]
+400 x 300 (59) [X8R8G8B8]
+400 x 300 (60) [X8R8G8B8]
+512 x 384 (59) [X8R8G8B8]
+512 x 384 (60) [X8R8G8B8]
+640 x 400 (59) [X8R8G8B8]
+640 x 400 (60) [X8R8G8B8]
 640 x 480 (59) [X8R8G8B8]
-720 x 480 (60) [X8R8G8B8]
-720 x 480 (59) [X8R8G8B8]
-720 x 576 (50) [X8R8G8B8]
+640 x 480 (60) [X8R8G8B8]
+800 x 600 (59) [X8R8G8B8]
 800 x 600 (60) [X8R8G8B8]
-800 x 600 (75) [X8R8G8B8]
+1024 x 768 (59) [X8R8G8B8]
 1024 x 768 (60) [X8R8G8B8]
-1024 x 768 (75) [X8R8G8B8]
-1152 x 864 (75) [X8R8G8B8]
-1176 x 664 (50) [X8R8G8B8]
-1176 x 664 (60) [X8R8G8B8]
-1176 x 664 (59) [X8R8G8B8]
-1280 x 720 (60) [X8R8G8B8]
+1152 x 864 (59) [X8R8G8B8]
+1152 x 864 (60) [X8R8G8B8]
+1280 x 600 (59) [X8R8G8B8]
+1280 x 600 (60) [X8R8G8B8]
 1280 x 720 (59) [X8R8G8B8]
-1280 x 720 (50) [X8R8G8B8]
+1280 x 720 (60) [X8R8G8B8]
+1280 x 768 (59) [X8R8G8B8]
 1280 x 768 (60) [X8R8G8B8]
+1280 x 800 (59) [X8R8G8B8]
 1280 x 800 (60) [X8R8G8B8]
+1280 x 960 (59) [X8R8G8B8]
 1280 x 960 (60) [X8R8G8B8]
-1280 x 960 (75) [X8R8G8B8]
+1280 x 1024 (59) [X8R8G8B8]
 1280 x 1024 (60) [X8R8G8B8]
-1280 x 1024 (75) [X8R8G8B8]
+1360 x 768 (59) [X8R8G8B8]
 1360 x 768 (60) [X8R8G8B8]
+1366 x 768 (59) [X8R8G8B8]
 1366 x 768 (60) [X8R8G8B8]
+1400 x 1050 (59) [X8R8G8B8]
+1400 x 1050 (60) [X8R8G8B8]
+1440 x 900 (59) [X8R8G8B8]
+1440 x 900 (60) [X8R8G8B8]
+1600 x 900 (59) [X8R8G8B8]
 1600 x 900 (60) [X8R8G8B8]
-1600 x 1024 (59) [X8R8G8B8]
-1600 x 1024 (60) [X8R8G8B8]
+1600 x 1200 (59) [X8R8G8B8]
+1600 x 1200 (60) [X8R8G8B8]
 1680 x 1050 (59) [X8R8G8B8]
 1680 x 1050 (60) [X8R8G8B8]
-1768 x 992 (25) [X8R8G8B8]
-1768 x 992 (30) [X8R8G8B8]
-1768 x 992 (29) [X8R8G8B8]
-1920 x 1080 (60) [X8R8G8B8]
+1792 x 1344 (59) [X8R8G8B8]
+1792 x 1344 (60) [X8R8G8B8]
+1856 x 1392 (59) [X8R8G8B8]
+1856 x 1392 (60) [X8R8G8B8]
 1920 x 1080 (59) [X8R8G8B8]
-1920 x 1080 (25) [X8R8G8B8]
-1920 x 1080 (30) [X8R8G8B8]
-1920 x 1080 (29) [X8R8G8B8]
-1920 x 1080 (50) [X8R8G8B8]
-1440 x 900 (60) [X8R8G8B8]
-1400 x 1050 (60) [X8R8G8B8]
+1920 x 1080 (60) [X8R8G8B8]
+1920 x 1200 (59) [X8R8G8B8]
+1920 x 1200 (60) [X8R8G8B8]
+1920 x 1440 (59) [X8R8G8B8]
+1920 x 1440 (60) [X8R8G8B8]
+2048 x 1152 (59) [X8R8G8B8]
+2048 x 1152 (60) [X8R8G8B8]
+2048 x 1536 (59) [X8R8G8B8]
+2048 x 1536 (60) [X8R8G8B8]
+2560 x 1600 (59) [X8R8G8B8]
+2560 x 1600 (60) [X8R8G8B8]
+2736 x 1824 (59) [X8R8G8B8]
+2736 x 1824 (60) [X8R8G8B8]
 
 {12}-- audio device info --
 device(0) : 主要音效驅動程式
 module(0) : 
-device(1) : 喇叭 (High Definition Audio Device)
-module(1) : {0.0.0.00000000}.{f385fba4-24d5-4c9c-8c12-c3bb8323f435}
+device(1) : 喇叭 (Realtek High Definition Audio(SST))
+module(1) : {0.0.0.00000000}.{48839fe4-021c-4f12-906b-028358864bfe}
 
 -- config --
 texture bpp : 32
@@ -366,7 +387,7 @@ full screen : 1
 screen bpp : -1
 game bpp : 32
 font : Noto Sans CJK SC Bold
-font shadow : 18073140
+font shadow : 18805164
 font bold : 0
 use proportional : 1
 width : 1280
