@@ -26,7 +26,7 @@
 (03)type : 0
 (04)family.model.stepping : 6.14.9
 (05)number : 4
-(06)clock : 2712MHz (2711MHz)
+(06)clock : 2712MHz (2712MHz)
 (07)cpuid : 1
 (08)mmx : 1
 (09)cmov : 1
@@ -50,7 +50,7 @@
 (08)DeviceId : 00005916
 (09)SubSysId : 00261414
 (10)Revision : 00000002
-(11)DeviceIdentifier : d7b78e66:00001a56:000011cf:00ec8cd0
+(11)DeviceIdentifier : d7b78e66:00001a56:000011cf:0103f808
 (12)WHQLLevel : 00000000
 
 {09}-- now display info --
@@ -387,7 +387,7 @@ full screen : 1
 screen bpp : -1
 game bpp : 32
 font : Noto Sans CJK SC Bold
-font shadow : 15843756
+font shadow : 17219980
 font bold : 0
 use proportional : 1
 width : 1280
